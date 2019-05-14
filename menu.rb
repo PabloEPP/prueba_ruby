@@ -37,3 +37,28 @@ def inasistencias_alumno
         end
       return aux_arr
   end
+
+
+
+
+
+
+
+  #Menu
+condition = 0
+while condition != 4
+  puts "Elije una opción entre 1 y 3. 4 para salir"
+  condition = gets.chomp.to_i
+  case condition
+  when 1
+    calcular_promedio
+  when 2
+    inasistencias_alumno
+  when 3
+    #Metodo alumnos aprobados
+  when 4
+    puts "Adios"
+  else
+    puts "Opción no válida, ingrese una opcion del 1 al 3, 4 para Salir"
+  end
+end
